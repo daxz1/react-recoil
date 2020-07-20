@@ -1,12 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css'
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import UseStateExample from './useStateExample';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/examples/use-state">Example With UseState</Link>
+            </li>
+            <li>
+              <Link to="/examples/use-recoil">Example With UseRecoil</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <Switch>
+        <Route path="/examples/use-state">
+          <UseStateExample />
+        </Route>
+      </Switch>
+    </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
