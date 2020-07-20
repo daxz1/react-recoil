@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css'
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import UseStateExample from './useStateExample';
+import UseRecoilExample from './useRecoilExample';
 
 
 ReactDOM.render(
@@ -26,6 +27,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/examples/use-state">
           <UseStateExample />
+        </Route>
+        <Route path="/examples/use-recoil">
+          <UseRecoilExample />
         </Route>
       </Switch>
     </Router>

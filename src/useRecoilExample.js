@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
+import RecoilRoot from 'recoil';
 
 const UseStateExample = () => (
-  <>
+  <RecoilRoot>
     <Nav/>
     <Body/>
     <Profile/>
-  </>
+  </RecoilRoot>
 )
 
 const Nav = () => {
@@ -20,11 +21,7 @@ const Body = () => {
   )
 }
 
-/**
- * State is local to this component only. We could lift it up.
- * @returns {*}
- * @constructor
- */
+
 const Profile = () => {
   const [username, setUsername] = useState('Davinder Cheema')
   return (
