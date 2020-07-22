@@ -8,7 +8,7 @@ import React from 'react';
  * @returns {*}
  */
 const main = ({ example, handleOnClick, count}) => (
-  <div>
+  <div className='example'>
     <div>Example Using: {example}</div>
     <div>Number of Times Clicked: {count}</div>
     <div onClick={handleOnClick}>Click Me</div>

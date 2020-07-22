@@ -8,6 +8,6 @@ export default () => {
   const [count, setCount] = useRecoilState(countState);
   let value = useRecoilValue(incrementSelector);
   return (
-    <Main example='recoil' handleOnClick={()=> setCount(value)} count={count}/>
+    <Main example='Recoil' handleOnClick={()=> setCount(value)} count={count}/>
   )
 }
