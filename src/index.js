@@ -1,40 +1,21 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import UseStateExample from './useStateExample';
-import UseRecoilExample from './useRecoilExample';
+import { RecoilRoot } from "recoil/dist";
+import { Provider as ReduxProvider } from 'react-redux';
+import Store from './redux/store';
+import RecoilExample from './recoil/example';
+import ReduxExample from './redux/example';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/examples/use-state">Example With UseState</Link>
-            </li>
-            <li>
-              <Link to="/examples/use-recoil">Example With UseRecoil</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <Switch>
-        <Route path="/examples/use-state">
-          <UseStateExample />
-        </Route>
-        <Route path="/examples/use-recoil">
-          <UseRecoilExample />
-        </Route>
-      </Switch>
-    </Router>
-
-  </React.StrictMode>,
+  <StrictMode>
+    <RecoilRoot>
+      <RecoilExample />
+    </RecoilRoot>
+    <ReduxProvider store={Store}>
+      <ReduxExample />
+    </ReduxProvider>
+  </StrictMode>,
   document.getElementById('root')
 );
 
