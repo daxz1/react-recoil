@@ -17,11 +17,19 @@ export const countState = atom({
   default: 0 // This can be any JS data type
 });
 
+/**
+ *
+ * @type {RecoilState<unknown>}
+ */
 export const randomDataState = atom({
   key: 'randomDataState',
   default: []
 })
 
+/**
+ *
+ * @type {RecoilState<string>}
+ */
 export const usernameState = atom({
   key: 'username',
   default: 'Dav Singh'

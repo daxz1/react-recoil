@@ -2,12 +2,16 @@ import React from 'react';
 import {
   useRecoilState,
   useRecoilValue,
-  selector
 } from 'recoil';
 
 import { usernameState } from "./atom";
 import { usernameSelector } from "./selector";
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const UseRecoilExample = () => {
   return (
     <div className='container'>
@@ -18,6 +22,11 @@ const UseRecoilExample = () => {
     </div>)
 }
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Nav = () => {
   const username = useRecoilValue(usernameState);
   return (
@@ -25,6 +34,11 @@ const Nav = () => {
   )
 }
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Count = () => {
   const count = useRecoilValue(usernameSelector);
   return (
@@ -32,6 +46,11 @@ const Count = () => {
   )
 }
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Profile = () => {
   const [username, setUsername] = useRecoilState(usernameState);
   return (

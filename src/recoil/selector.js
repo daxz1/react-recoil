@@ -26,6 +26,10 @@ export const getRandomDataSelector = selector({
   }
 })
 
+/**
+ *
+ * @type {RecoilValueReadOnly<unknown>}
+ */
 export const usernameSelector = selector({
   key: 'usernameSelector',
   get: ({ get }) => {

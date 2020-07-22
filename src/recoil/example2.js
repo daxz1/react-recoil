@@ -2,6 +2,11 @@ import React from "react";
 import { useRecoilValue } from "recoil/dist";
 import { getRandomDataSelector } from "./selector";
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Example2 = () => {
   const randomData = useRecoilValue(getRandomDataSelector)
   return (

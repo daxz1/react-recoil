@@ -4,6 +4,11 @@ import { countState } from "./atom";
 import { incrementSelector } from "./selector";
 import { Main } from '../components';
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Example = () => {
   const [count, setCount] = useRecoilState(countState);
   let value = useRecoilValue(incrementSelector);

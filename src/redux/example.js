@@ -3,7 +3,12 @@ import { Main } from '../components';
 import { useSelector, useDispatch } from "react-redux";
 import { increment } from "./actions";
 
-export default () => {
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
+const Example = () => {
   const count = useSelector(state => state.count );
   const dispatch = useDispatch();
   return (
@@ -16,3 +21,5 @@ export default () => {
     />
   )
 }
+
+export default Example;

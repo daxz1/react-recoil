@@ -3,6 +3,11 @@ import {
   Main
 } from "../components";
 
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Example = () => {
   const [count, setCount] = useState(0);
   return (

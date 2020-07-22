@@ -3,6 +3,10 @@ import {
   Link
 } from "react-router-dom";
 
+/**
+ *
+ * @returns {*}
+ */
 export default () => (
   <nav className='navigation'>
     <ul className='menu'>
