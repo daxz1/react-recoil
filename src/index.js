@@ -11,6 +11,7 @@ import {Provider as ReduxProvider} from 'react-redux';
 import Store from './redux/store';
 import RecoilExample from './recoil/example';
 import RecoilExample2 from './recoil/example2';
+import RecoilExample3 from './recoil/example3';
 import ReduxExample from './redux/example';
 import ReactExample from './react/example';
 
@@ -47,6 +48,11 @@ ReactDOM.render(
             <RecoilExample/>
           </RecoilRoot>
           <ReactExample />
+        </Route>
+        <Route path='/examples/recoil-profile'>
+          <RecoilRoot>
+            <RecoilExample3 />
+          </RecoilRoot>
         </Route>
       </Switch>
     </Router>

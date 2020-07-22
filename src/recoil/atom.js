@@ -21,3 +21,8 @@ export const randomDataState = atom({
   key: 'randomDataState',
   default: []
 })
+
+export const usernameState = atom({
+  key: 'username',
+  default: 'Dav Singh'
+})

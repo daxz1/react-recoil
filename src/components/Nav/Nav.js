@@ -15,6 +15,9 @@ export default () => (
       <li className='menu__item'>
         <Link to='/examples/recoil-state'> Recoil vs State</Link>
       </li>
+      <li className='menu__item'>
+        <Link to='/examples/recoil-profile'> Recoil Profile</Link>
+      </li>
     </ul>
   </nav>
 )

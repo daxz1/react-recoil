@@ -89,6 +89,16 @@ $menu-item-border-color: lighten($menu-bg, 3%);
     display: inline-block;
     font-size: 1rem
   }
+
+  input {
+    margin: 20px 0 0 20px;
+    width: 300px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 }
 
 

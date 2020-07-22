@@ -1,5 +1,5 @@
 import { selector } from "recoil/dist";
-import { countState } from "./atom";
+import {countState, usernameState} from "./atom";
 
 /**
  * Used in example 1
@@ -25,3 +25,11 @@ export const getRandomDataSelector = selector({
     return json;
   }
 })
+
+export const usernameSelector = selector({
+  key: 'usernameSelector',
+  get: ({ get }) => {
+    const username = get(usernameState);
+    return username.length;
+  }
+});
