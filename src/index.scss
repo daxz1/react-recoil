@@ -65,3 +65,31 @@ $menu-item-border-color: lighten($menu-bg, 3%);
     }
   }
 }
+
+
+// Example 1
+.container {
+  padding: 50px;
+  .heading {
+    font-size: 1.6rem;
+    margin: 20px;
+  }
+
+  p {
+    margin: 20px 0 0 20px;
+  }
+
+  button {
+    background-color: $menu-bg;
+    border: none;
+    color: $menu-item-hover-color;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem
+  }
+}
+
+
+

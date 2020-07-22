@@ -1,20 +1,21 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { useRecoilValue } from "recoil/dist";
 import { getRandomDataSelector } from "./selector";
 
-export default () => {
+const Example2 = () => {
   const randomData = useRecoilValue(getRandomDataSelector)
   return (
-    <div>
-      <h1>Example of Loading Random Data</h1>
-      { randomData.map(data => {
+    <div className='container'>
+      <h1 className='heading'>Example of Loading Random Data</h1>
+      { randomData.map(({id, title}) => {
         return (
-          <div>
-            <p>{data.id}</p>
-            <p>{data.title}</p>
+          <div key={id}>
+            <p>{`${id} ${title}`}</p>
           </div>
         )
       })}
     </div>
   )
 };
+
+export default Example2;

@@ -8,10 +8,12 @@ import React from 'react';
  * @returns {*}
  */
 const main = ({ example, handleOnClick, count}) => (
-  <div className='example'>
-    <div>Example Using: {example}</div>
-    <div>Number of Times Clicked: {count}</div>
-    <div onClick={handleOnClick}>Click Me</div>
+  <div className='container'>
+    <h1 className='heading'>Example Using: {example}</h1>
+    <p>Number of Times Clicked: {count}</p>
+    <p>
+      <button onClick={handleOnClick}>Click Me</button>
+    </p>
   </div>
 );
 
