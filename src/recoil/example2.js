@@ -11,7 +11,7 @@ const Example2 = () => {
   const randomData = useRecoilValue(getRandomDataSelector)
   return (
     <div className='container'>
-      <h1 className='heading'>Example of Loading Random Data</h1>
+      <h1 className='heading'>Example of Loading Async Data</h1>
       { randomData.map(({id, title}) => {
         return (
           <div key={id}>

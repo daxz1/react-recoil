@@ -29,7 +29,9 @@ ReactDOM.render(
       <Nav/>
       <Switch>
         <Route exact path='/'>
-          <Suspense fallback={<div>Loading</div>}>
+          <Suspense fallback={<div className="loader__container">
+              <div className="lds-dual-ring" />
+          </div>}>
             <RecoilRoot>
               <RecoilExample2/>
             </RecoilRoot>

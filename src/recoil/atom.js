@@ -6,7 +6,7 @@ import {
 
 // Atoms are units of state
 
-// Atoms are updateable and subscribable
+// Atoms are updatable and subscribable
 
 /**
  *
