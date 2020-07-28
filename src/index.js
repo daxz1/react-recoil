@@ -14,6 +14,7 @@ import RecoilExample2 from './recoil/example2';
 import RecoilExample3 from './recoil/example3';
 import ReduxExample from './redux/example';
 import ReactExample from './react/example';
+import ReactExample1 from './react/example1';
 
 import {
   Nav
@@ -55,6 +56,9 @@ ReactDOM.render(
           <RecoilRoot>
             <RecoilExample3 />
           </RecoilRoot>
+        </Route>
+        <Route path='/examples/prop-drilling'>
+          <ReactExample1 />
         </Route>
       </Switch>
     </Router>

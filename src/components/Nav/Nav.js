@@ -14,13 +14,16 @@ export default () => (
         <Link to='/'> Recoil</Link>
       </li>
       <li className='menu__item'>
-        <Link to='/examples/recoil-redux'> Recoil vs Redux</Link>
+        <Link to='/examples/recoil-redux'>Recoil vs Redux</Link>
       </li>
       <li className='menu__item'>
-        <Link to='/examples/recoil-state'> Recoil vs State</Link>
+        <Link to='/examples/recoil-state'>Recoil vs State</Link>
       </li>
       <li className='menu__item'>
-        <Link to='/examples/recoil-profile'> Recoil Profile</Link>
+        <Link to='/examples/recoil-profile'>Recoil Profile</Link>
+      </li>
+      <li className='menu__item'>
+        <Link to='/examples/prop-drilling'>Prop Drilling</Link>
       </li>
     </ul>
   </nav>
