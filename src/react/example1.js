@@ -1,6 +1,11 @@
 import React from "react";
 
-function Example1 (props) {
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
+function Example () {
   return (
     <NestedComponent name='Dav Singh'/>
   );
@@ -14,4 +19,4 @@ const NestedComponent2 = (props) => {
   return (<div>{props.name}</div>);
 }
 
-export default Example1;
+export default Example;

@@ -5,10 +5,12 @@ import React from "react";
  * @param username
  * @returns {*}
  */
-export default ({ username }) => {
+function Profile({ username }) {
   return (
     <div>
       Profile for { username }
     </div>
   )
-}
+};
+
+export default Profile;

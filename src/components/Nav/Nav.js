@@ -7,7 +7,8 @@ import {
  *
  * @returns {*}
  */
-export default () => (
+function Nav() {
+  return (
   <nav className='navigation'>
     <ul className='menu'>
       <li className='menu__item'>
@@ -27,4 +28,6 @@ export default () => (
       </li>
     </ul>
   </nav>
-)
+)};
+
+export default Nav;

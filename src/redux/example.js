@@ -8,7 +8,7 @@ import { increment } from "./actions";
  * @returns {*}
  * @constructor
  */
-const Example = () => {
+function Example() {
   const count = useSelector(state => state.count );
   const dispatch = useDispatch();
   return (

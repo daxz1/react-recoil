@@ -1,6 +1,6 @@
 import {
   atom
-} from "recoil/dist";
+} from "recoil";
 
 // Atoms are the single source of truth in our applications. Similar to Store in redux.
 

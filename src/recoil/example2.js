@@ -7,7 +7,11 @@ import { getRandomDataSelector } from "./selector";
  * @returns {*}
  * @constructor
  */
-const Example2 = () => {
+function Example() {
+  //
+  // To read just the value we use the hook useRecoilValue, this can accept either
+  // a atom or selector. useRecoilValue is read only.
+  //
   const randomData = useRecoilValue(getRandomDataSelector)
   return (
     <div className='container'>
@@ -23,4 +27,4 @@ const Example2 = () => {
   )
 };
 
-export default Example2;
+export default Example;
