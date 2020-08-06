@@ -22,7 +22,8 @@ const reducer = (state = initialState, { type }) => {
     case INCREMENT_COUNT:
       return {
         ...state,
-        count: ++state.count};
+        count: ++state.count
+      };
     default:
       return state;
   }

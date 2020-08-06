@@ -11,7 +11,10 @@ import {
 function Example() {
   const [count, setCount] = useState(0);
   return (
-    <Main example='React State' handleOnClick={() => setCount(count + 1)} count={count} />
+    <Main
+      example='React State'
+      handleOnClick={() => setCount(count + 1)}
+      count={count} />
   );
 }
 

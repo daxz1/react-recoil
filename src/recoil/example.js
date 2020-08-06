@@ -23,7 +23,11 @@ function Example() {
   //
   let value = useRecoilValue(incrementSelector);
   return (
-    <Main example='Recoil' handleOnClick={()=> setCount(value)} count={count}/>
+    <Main
+      example='Recoil'
+      handleOnClick={()=> setCount(value)}
+      count={count}
+    />
   )
 }
 
